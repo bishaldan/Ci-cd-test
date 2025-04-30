@@ -1,0 +1,18 @@
+name: Write DateTime File Locally
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  write-file:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Write date and time to file
+        run: |
+          echo "Triggered at: $(date)" >> /Users/bishalmahatchhetri/Developer/Office/CI-CD/git-action-log.txt
