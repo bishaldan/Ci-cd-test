@@ -15,4 +15,4 @@ jobs:
 
       - name: Write date and time to file
         run: |
-          echo "Triggered at: $(date)" >> /Users/bishalmahatchhetri/Developer/Office/CI-CD/git-action-log.txt
+          echo "Triggered at: $(date)" >> ~/Desktop/test/git-action-log.txt
